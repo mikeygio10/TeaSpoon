@@ -16,11 +16,11 @@ entities:
  # Weather to register Vanilla Entities (Set to false if you're going to use a MobAI Plugin such as, PureEntitiesX etc...) or not
  register: true
  # Enable Lightning Fire & Damage
- lightningFire: true
+ lightningFire: false
  # Enable EndCrystal Explosion
  endCrystalExplosion: true
  # EndCrystal Explosion Power
- endCrystalPower: 6
+ endCrystalPower: 1
  creeper:
   # Enable creepers' ability to explode
   enableExplosions: false  # disabled by default. Nobody wants griefed servers ¯\_(ツ)_/¯
@@ -44,7 +44,7 @@ enchantments:
 
 dimensions:
  # Enable / Disable Dimensions
- enable: true
+ enable: false
  nether:
   levelName: "teanether"
   # Vanilla-Like Nether Tranfer is not perfect and would take more time (possibly lag)...
@@ -66,13 +66,13 @@ misc:
  lightningRods: false
 
 weather: 
- enable: true
+ enable: false
  # Minimum Weather Duration (IN TICKS)
  minDuration: 6000
  # Maximum Weather Duration (IN TICKS)
  maxDuration: 12000
  # If lightning should be spawned in stormy weather
- lightning: true
+ lightning: false
 
 player:
  # Enable to dis-allow container interactions & item dropping when in creative
@@ -85,18 +85,18 @@ player:
   replace: false
  # Elytra configuration
  elytra:
-  enable: true
-  enableElytraBoost: true
-  elytraBoostParticles: true
- fishing: true
+  enable: false
+  enableElytraBoost: false
+  elytraBoostParticles: false
+ fishing: false
 
 mobSpawner:
  enable: true
  # Drop spawners on silk touch (damageAsEID needs to be enabled)
- silkTouchSpawners: false
+ silkTouchSpawners: true
 
 fireworks:
- enable: true
+ enable: false
 
 Xp:
  dropMobExperience: true
@@ -113,15 +113,15 @@ hopper:
 
 beacon:
  # You can only disable effects (if it has any effect at all) because beacons are rendered client-side
- enable: true
- effectsEnabled: true
+ enable: false
+ effectsEnabled: false
 
 shulkerBox:
- enable: true
+ enable: false
 
 anvil:
  # WARNING: This is handled client-side... and has no verification yet, meaning this can be used to exploit items.
- enable: true
+ enable: false
 
 cauldron:
- enable: true
+ enable: false
